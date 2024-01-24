@@ -22,7 +22,7 @@ export default function Main() {
 
             <a
               className="nav-button"
-              href="https://www.youtube.com/"
+              href="mailto:gabriel.sert9@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -31,7 +31,7 @@ export default function Main() {
 
             <a
               className="nav-button"
-              href="https://www.youtube.com/"
+              href="https://github.com/gabrielinaciosouza"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -40,7 +40,7 @@ export default function Main() {
 
             <a
               className="nav-button"
-              href="https://www.youtube.com/"
+              href="https://www.linkedin.com/in/gabriel-inacio-dev/"
               target="_blank"
               rel="noopener noreferrer"
             >
