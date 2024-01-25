@@ -3,32 +3,12 @@ import "../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "../assets/avatar.png";
+import AnimatedBackground from "../components/AnimatedBackground";
 
 export default function Home() {
   return (
     <main className="main">
-      <div className="background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <AnimatedBackground />
       <div className="home-wrapper">
         <div className="center">
           <h2 className="home-title">👋 Hi! I'm Gabriel</h2>
