@@ -7,12 +7,12 @@ import AnimatedBackground from "../components/AnimatedBackground";
 
 export default function Home() {
   return (
-    <main className="main">
+    <main className="home-main">
       <AnimatedBackground />
       <div className="home-wrapper">
-        <div className="center">
+        <div className="home-center">
           <h2 className="home-title">👋 Hi! I'm Gabriel</h2>
-          <p className="description ">
+          <p className="home-description ">
             A full-stack developer, focuses on Flutter and Spring Boot (Java). I
             have an absolute passion for architecture and unit testing. I have
             worked on large-scale projects with thousands of daily accesses and
@@ -21,7 +21,7 @@ export default function Home() {
             environment.
           </p>
           <Link to="/posts">
-            <button className="button">
+            <button className="home-button">
               <span>Take a look at my blog!</span>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>

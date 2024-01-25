@@ -1,4 +1,4 @@
-.main {
+.home-main {
   width: 100%;
   flex: 1;
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.center {
+.home-center {
   position: relative;
   z-index: 1;
   margin-left: auto;
@@ -23,14 +23,14 @@
   line-height: 1.6;
 }
 
-.description {
+.home-description {
   margin-top: 1.5rem;
   font-size: 1.25rem;
   line-height: 2.25rem;
   color: whitesmoke;
 }
 
-.button {
+.home-button {
   margin-top: 3rem;
   padding: 0.75rem 1.5rem;
   display: inline-flex;
@@ -54,7 +54,7 @@
   border: none;
 }
 
-.button:hover {
+.home-button:hover {
   background-color: #3b82f6;
   gap: 2rem;
 }

@@ -1,16 +1,16 @@
-.wrapper {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   position: relative;
 }
 
-.header {
+.main-header {
   height: 5rem;
   width: 100%;
 }
 
-.header-center {
+.main-header-center {
   max-width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -21,20 +21,20 @@
   font-weight: 600;
 }
 
-.title-link {
+.main-title-link {
   margin-left: auto;
   font-size: 1.125rem;
   text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
-  .title-link {
+  .main-title-link {
     margin-left: auto;
     font-size: 1rem;
     text-decoration: none;
   }
 
-  .header-center {
+  .main-header-center {
     max-width: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -45,7 +45,7 @@
     font-weight: 600;
   }
 
-  .nav-button {
+  .main-nav-button {
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
@@ -53,13 +53,13 @@
   }
 }
 
-.title {
+.main-title {
   margin-left: 0.125rem;
   margin-right: 0.125rem;
   color: #3b82f6;
 }
 
-.nav {
+.main-nav {
   margin-right: auto;
   display: grid;
   gap: 0.75rem;
@@ -69,43 +69,43 @@
   line-height: 1.5;
 }
 
-.nav-button {
+.main-nav-button {
   opacity: 0.6;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
 }
 
-.nav-button:hover {
+.main-nav-button:hover {
   opacity: 1;
   color: #3b82f6;
 }
 
-.nav-button:active {
+.main-nav-button:active {
   opacity: 1;
   color: #3b82f6;
 }
 
-.divider {
+.main-divider {
   width: 1.5px;
   height: 100%;
   background-color: #1f2937;
 }
 
-.icon {
+.main-icon {
   color: white;
 }
 
-.icon:hover {
+.main-icon:hover {
   color: #3b82f6;
 }
 
-.footer {
+.main-footer {
   margin-top: auto;
   padding: 1em;
   text-align: center;
 }
 
-.footer-center {
+.main-footer-center {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;

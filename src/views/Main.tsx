@@ -7,22 +7,22 @@ import Home from "./Home";
 
 export default function Main() {
   return (
-    <div className="wrapper">
-      <header className="header">
-        <div className="header-center">
-          <Link to="/" className="title-link">
-            <span className="title">Gabriel's Blog</span>
+    <div className="main-wrapper">
+      <header className="main-header">
+        <div className="main-header-center">
+          <Link to="/" className="main-title-link">
+            <span className="main-title">Gabriel's Blog</span>
           </Link>
-          <div className="nav">
+          <div className="main-nav">
             <NavLink to="/posts">
-              <a className="nav-button">
+              <a className="main-nav-button">
                 <span>Posts</span>
               </a>
             </NavLink>
-            <div className="divider"></div>
+            <div className="main-divider"></div>
 
             <a
-              className="nav-button"
+              className="main-nav-button"
               href="mailto:gabriel.sert9@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export default function Main() {
             </a>
 
             <a
-              className="nav-button"
+              className="main-nav-button"
               href="https://github.com/gabrielinaciosouza"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,7 +40,7 @@ export default function Main() {
             </a>
 
             <a
-              className="nav-button"
+              className="main-nav-button"
               href="https://www.linkedin.com/in/gabriel-inacio-dev/"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,8 +51,8 @@ export default function Main() {
         </div>
       </header>
       <Home />
-      <footer className="footer">
-        <div className="footer-center">
+      <footer className="main-footer">
+        <div className="main-footer-center">
           <span>2024-present © Gabriel Inacio</span>
         </div>
       </footer>
