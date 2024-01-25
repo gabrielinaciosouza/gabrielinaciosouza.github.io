@@ -27,7 +27,7 @@ export default function Main() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <FontAwesomeIcon icon={faEnvelope} className="main-icon" />
             </a>
 
             <a
@@ -50,7 +50,7 @@ export default function Main() {
           </div>
         </div>
       </header>
-      <Home />
+      <Outlet />
       <footer className="main-footer">
         <div className="main-footer-center">
           <span>2024-present © Gabriel Inacio</span>

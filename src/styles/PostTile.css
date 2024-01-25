@@ -1,0 +1,33 @@
+.post-tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5rem;
+  border-top: 1px dashed #d1d5db;
+}
+
+.post-tile-row {
+  display: flex;
+  align-items: center;
+}
+
+.post-tile-left {
+  width: 9rem;
+  font-size: 0.875rem;
+  color: whitesmoke;
+  text-align: right;
+}
+
+.post-tile-icon {
+  margin-right: 0.5rem;
+  display: inline;
+}
+
+.post-tile-right {
+  margin-left: 1rem;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+}
