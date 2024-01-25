@@ -13,7 +13,7 @@ export default function Main() {
           <Link to="/" className="main-title-link">
             <span className="main-title">Gabriel's Blog</span>
           </Link>
-          <div className="main-nav">
+          <nav className="main-nav">
             <NavLink to="/posts">
               <a className="main-nav-button">
                 <span>Posts</span>
@@ -47,7 +47,7 @@ export default function Main() {
             >
               <FontAwesomeIcon icon={faLinkedin} className="icon" />
             </a>
-          </div>
+          </nav>
         </div>
       </header>
       <Outlet />
