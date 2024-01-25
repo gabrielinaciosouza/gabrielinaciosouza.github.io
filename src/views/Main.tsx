@@ -1,5 +1,5 @@
 import "../styles/Main.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -14,10 +14,11 @@ export default function Main() {
             <span className="title">Gabriel's Blog</span>
           </Link>
           <div className="nav">
-            <a className="nav-button">
-              <span>Posts</span>
-            </a>
-
+            <NavLink to="/posts">
+              <a className="nav-button">
+                <span>Posts</span>
+              </a>
+            </NavLink>
             <div className="divider"></div>
 
             <a
