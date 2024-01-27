@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import "../styles/PostTile.css";
-import Post from "../models/Post";
+import PostModel from "../models/PostModel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 export type PostTileProps = {
-  post: Post;
+  post: PostModel;
 };
 
 export default function PostTile(props: PostTileProps) {
   return (
-    <Link to={props.post.htmlUrl}>
+    <Link to={"/posts/" + props.post.number}>
       <div className="post-tile-wrapper">
         <div className="post-tile-row">
           <div className="post-tile-left">{props.post.createdAt}</div>

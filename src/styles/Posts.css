@@ -39,4 +39,5 @@
 .posts-pagination {
   margin-top: auto;
   align-self: center;
+  justify-content: center !important;
 }

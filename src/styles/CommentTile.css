@@ -1,0 +1,35 @@
+.comment-tile-wrapper {
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.comment-tile-avatar {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.comment-tile-header {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.comment-tile-author {
+  margin-right: 1rem;
+  color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

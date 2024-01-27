@@ -18,6 +18,23 @@ export type Milestone = {
   open_issues: number;
 };
 
+export type User = {
+  id: number;
+  login: string;
+  avatar_url: string;
+  html_url: string;
+};
+
+export type Comment = {
+  id: number;
+  body: string;
+  html_url: string;
+  author_association: string;
+  created_at: string;
+  updated_at: string;
+  user: User;
+};
+
 function toQuery(raw: Record<string, unknown>) {
   const params = new URLSearchParams();
 
@@ -80,6 +97,23 @@ class GitHubService {
     return this.request(
       "GET",
       `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/milestones`,
+      query
+    );
+  }
+
+  public getIssue(issue: number): Promise<Issue> {
+    return this.request(
+      "GET",
+      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/issues/${issue}`
+    );
+  }
+
+  public listComments(issue: number, page: number): Promise<Comment[]> {
+    const query = { page, per_page: 10 };
+
+    return this.request(
+      "GET",
+      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/issues/${issue}/comments`,
       query
     );
   }
