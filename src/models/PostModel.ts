@@ -1,7 +1,7 @@
 import { Issue } from "../services/GitHubService";
-import { format } from "date-fns";
+import Model from "./Model";
 
-export default class PostModel {
+export default class PostModel extends Model {
   private constructor(
     public id: number,
     public number: number,
@@ -11,13 +11,11 @@ export default class PostModel {
     public htmlUrl: string,
     public createdAt: string,
     public updatedAt: string
-  ) {}
+  ) {
+    super();
+  }
 
   static from(issue: Issue): PostModel {
-    const createdAt = new Date(issue.created_at);
-    const updatedAt = new Date(issue.updated_at);
-    const formattedCreatedAt = format(createdAt, "MMM dd, yyyy");
-    const formattedUpdatedAt = format(updatedAt, "MMM dd, yyyy");
     return new PostModel(
       issue.id,
       issue.number,
@@ -25,8 +23,8 @@ export default class PostModel {
       issue.body,
       issue.comments,
       issue.html_url,
-      formattedCreatedAt,
-      formattedUpdatedAt
+      PostModel.formatDate(issue.created_at),
+      PostModel.formatDate(issue.updated_at)
     );
   }
 }

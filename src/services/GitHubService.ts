@@ -48,6 +48,9 @@ function toQuery(raw: Record<string, unknown>) {
 function hasBody(method: string) {
   return ["POST", "PUT", "PATCH"].includes(method);
 }
+
+const repoProject = "gabrielinaciosouza/gabrielinaciosouza.github.io";
+
 class GitHubService {
   private apiBase = "https://api.github.com";
   private async request(
@@ -81,11 +84,7 @@ class GitHubService {
       per_page: 10,
     };
 
-    return this.request(
-      "GET",
-      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/issues`,
-      query
-    );
+    return this.request("GET", `/repos/${repoProject}/issues`, query);
   }
 
   public async listMilestones(): Promise<Milestone[]> {
@@ -94,18 +93,11 @@ class GitHubService {
       per_page: 10,
     };
 
-    return this.request(
-      "GET",
-      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/milestones`,
-      query
-    );
+    return this.request("GET", `/repos/${repoProject}/milestones`, query);
   }
 
   public getIssue(issue: number): Promise<Issue> {
-    return this.request(
-      "GET",
-      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/issues/${issue}`
-    );
+    return this.request("GET", `/repos/${repoProject}/issues/${issue}`);
   }
 
   public listComments(issue: number, page: number): Promise<Comment[]> {
@@ -113,7 +105,7 @@ class GitHubService {
 
     return this.request(
       "GET",
-      `/repos/gabrielinaciosouza/gabrielinaciosouza.github.io/issues/${issue}/comments`,
+      `/repos/${repoProject}/issues/${issue}/comments`,
       query
     );
   }
