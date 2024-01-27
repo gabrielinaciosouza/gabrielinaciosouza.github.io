@@ -31,3 +31,37 @@
   text-overflow: ellipsis;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .post-tile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    border-top: 1px dashed #d1d5db;
+  }
+
+  .post-tile-right {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    flex: none;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+  }
+
+  .post-tile-row {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .post-tile-left {
+    margin-top: 1rem;
+    width: 9rem;
+    font-size: 0.875rem;
+    color: whitesmoke;
+    text-align: left;
+  }
+}
