@@ -82,11 +82,20 @@ img {
 }
 
 code {
-  background-color: grey;
-  width: fit-content;
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
-  white-space: break-spaces;
-  border-radius: 6px;
+  display: block;
+  padding: 1em;
+  background-color: #161b22;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  margin: 0.5em 0;
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  color: white;
 }
